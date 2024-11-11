@@ -1,0 +1,66 @@
+:root {
+    /* Colors */
+    --color-primary: #3483DF;
+    --color-secondary: #0F0F0F;
+    --color-accent: #5F6772;
+    --color-text-orange: rgb(255, 84, 0);
+    --color-text-ash: #595956;
+    --color-background: #FFFFFF;
+
+    /* Font Sizes */
+    --font-size-small: 14px;
+    --font-size-base: 16px;
+    --font-size-large: 20px;
+    --font-size-medium: 18px;
+
+    /* Spacing */
+    --spacing-gap-small: 8px;
+    --spacing-gap-medium: 12px;
+    --spacing-gap-large: 36px;
+    --spacing-padding: 22px;
+    --nav-padding-horizontal: 100px;
+
+    /* Icon Sizes */
+    --logo-size: 32px;
+    --nav-logo-size: 32px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+/* media query breakpoints for responsive */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* CSS rules for phones and very small screens */
+}
+
+/* Small devices (sm: tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* CSS rules for tablets and larger phones */
+}
+
+/* Medium devices (md: tablets in landscape mode, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* CSS rules for tablets in landscape and smaller laptops */
+}
+
+/* Large devices (lg: desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* CSS rules for desktops and larger tablets */
+}
+
+/* Extra large devices (xl: large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* CSS rules for large desktops */
+}
+
+/* Extra extra large devices (xxl: very large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    /* CSS rules for very large desktops and TVs */
+}

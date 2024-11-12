@@ -127,16 +127,16 @@
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
     /* CSS rules for phones and very small screens */
-    .nav__link, .nav__action__button{
-        display: none;
+    .nav__link, .nav__action__button, .navbar{
+        flex-direction: column;
     }
 }
 
 /* Small devices (sm: tablets, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     /* CSS rules for tablets and larger phones */
-    .nav__link, .nav__action__button{
-        display: none;
+    .nav__link, .nav__action__button, .navbar{
+        flex-direction: column;
     }
 }
 

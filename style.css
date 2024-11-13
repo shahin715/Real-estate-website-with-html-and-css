@@ -235,9 +235,10 @@ body {
     border-radius: 16px;
 }
 .containers__box {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     padding: 100px 0;
-    justify-content: space-between;
+    gap: 18px;
     
     
 }
@@ -363,7 +364,7 @@ body {
 /* 4 box Container  */
 @media (max-width: 480px){
     .containers__box{
-        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
     }
     .containers__box__item h3{
         font-size: 24px;
@@ -372,15 +373,11 @@ body {
         font-size: 12px;
         text-align: center;
     }
-    .containers__box{
-        flex-direction: column;
-        gap:24px;
-    }
 }
 /* Mobile (up to 480px) */
 @media (min-width: 480px) and (max-width: 600px){
     .containers__box{
-        flex-direction: column;
+        grid-template-columns: repeat(2,1fr);
     }
 
 
@@ -399,8 +396,7 @@ body {
 }
 @media (min-width: 600px) and (max-width: 768px){
     .containers__box{
-        flex-direction: column;
-        gap:24px;
+        grid-template-columns: repeat(2,1fr);
     }
 
 

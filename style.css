@@ -27,17 +27,41 @@
     --logo-size: 32px;
     --nav-logo-size: 32px;
 }
-
+/* common */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
 }
+body{
+    background-color: #FAFAFA;
+}
 
 .box__container {
     width: 90%;
     margin: 0 auto;
+}
+
+.primary__button{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: var(--font-size-medium);
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 8px;
+}
+.secondary__button{
+    background-color: #F1F2F3;
+    color: var(--color-primary);
+    font-size: var(--font-size-medium);
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 8px;
 }
 
 /* header */
@@ -100,63 +124,201 @@
     align-items: center;
 }
 
-.login__button{
- background-color: var(--color-white);
- color: var(--color-primary);
- font-size: var(--font-size-medium);
- font-weight: 500;
- line-height: 24px;
- padding: 8px 18px;
- border: none;
- border-radius: 8px;
+
+/* hero section */
+.hero__section{
+    display: flex;
+    gap: 24px;
 }
 
-.sign__up__button{
-    background-color: var(--color-primary);
-    color: var(--color-white);
+.hero__content{
+    width: 60%;
+}
+
+.hero__batch{
+    color: var(--color-primary);
+    font-weight: 500;
+    font-size: var(--font-size-medium);
+    letter-spacing: 0.5px;
+    /* line-height: 26px; */
+    text-transform: uppercase;
+}
+
+.hero__button__container{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.hero__heading__content p{
+    color: var(--color-secondary);
+    font-weight: 700;
+    font-size: var(--font-size-extra-large);
+    line-height: 56px;
+}
+
+.watch__button{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.filter{
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* gap: 16px; */
+}
+
+.filter__tab{
+    display: flex;
+    align-items: center;
+}
+
+.filter__tab li{
+    list-style: none;
+    padding: 15px 20px;
     font-size: var(--font-size-medium);
     font-weight: 500;
-    line-height: 24px;
-    padding: 8px 18px;
-    border: none;
-    border-radius: 8px;
+    letter-spacing: -0.5;
+    cursor: pointer;
 }
 
-/* media query breakpoints for responsive */
+.filter__content{
+    display: flex;
+    align-items: end;
+    padding: 24px 32px;
+    gap: 12px;
+    bottom: 0;
+}
 
+.filter__input__field__container{
+    display: flex; gap: 12px; align-items: center;
+}
+
+.active__tab{
+    font-weight: 700 !important;
+    color: var(--color-primary) !important;
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.input__fields{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.input__fields label{
+  font-size: var(--font-size-base); 
+  font-weight: 500;
+  color: #4D5461;   
+}
+
+.input__fields input {
+    color: #000929;
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    padding: 8px;
+    height: 36px;
+    outline: none;
+}
+
+
+
+.hero__image{
+    width: 40%;
+}
+
+.hero__image img{
+    width: 100%;
+    height: 400px;
+    border-radius: 16px;
+}
+
+.jh{
+    display: flex;
+}
+
+
+/* media query breakpoints for responsive */
+/* navbar */
 /* Extra small devices (phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 480px) {
     /* CSS rules for phones and very small screens */
     .nav__link, .nav__action__button, .navbar{
         flex-direction: column;
     }
 }
-
-/* Small devices (sm: tablets, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-    /* CSS rules for tablets and larger phones */
+@media (min-width: 480px) and (max-width: 600px) {
+    .nav__link, .nav__action__button, .navbar{
+        flex-direction: column;
+    }
+}
+@media (min-width: 600px) and (max-width: 768px) {
     .nav__link, .nav__action__button, .navbar{
         flex-direction: column;
     }
 }
 
-/* Medium devices (md: tablets in landscape mode, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    /* CSS rules for tablets in landscape and smaller laptops */
+@media (max-width: 480px) {
+    /* CSS rules for phones and very small screens */
+    .hero__section,  .filter__input__field__container , .filter__content, .hero__button__container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
     
+    }
+    .hero__image{
+        width: 80%;
+        
+    }
+    .filter__tab{
+        justify-content: center;
+       }
+    .hero__heading__content p{
+        font-size: 30px;
+        line-height: 40px;
+        padding:5px;
+    }
+}
+@media (min-width: 480px) and (max-width: 600px) {
+    .hero__section,  .filter__input__field__container , .filter__content, .hero__button__container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero__image{
+        width: 80%;
+        
+    }
+    .filter__tab{
+        justify-content: center;
+       }
+    .hero__heading__content p{
+        font-size: 30px;
+        line-height: 40px;
+        padding:5px;
+    }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+    .hero__section,  .filter__input__field__container , .filter__content,.filter__content, .hero__button__container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero__image{
+        width: 80%;
+        
+    }
+    .filter__tab{
+     justify-content: center;
+    }
+    .hero__heading__content p{
+        font-size: 30px;
+        line-height: 40px;
+        padding:5px;
+    }
 }
 
-/* Large devices (lg: desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    /* CSS rules for desktops and larger tablets */
-}
-
-/* Extra large devices (xl: large desktops, 1200px and up) */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-    /* CSS rules for large desktops */
-}
-
-/* Extra extra large devices (xxl: very large desktops, 1400px and up) */
-@media (min-width: 1400px) {
-    /* CSS rules for very large desktops and TVs */
-}

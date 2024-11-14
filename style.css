@@ -239,16 +239,12 @@ body {
     grid-template-columns: repeat(4, 1fr);
     padding: 100px 0;
     gap: 18px;
-    
-    
 }
 .containers__box__item {
     border: 1px solid #e3e8ef;
     border-radius: 14px;
     background: var(--color-white);
     padding: 35px 41px;
-   
-    
 }
 .containers__box__item h3 {
     font-size: 40px;
@@ -258,111 +254,163 @@ body {
 .containers__box__item p {
     font-size: 18px;
     color: var(--color-text-ash);
-   
-    
 }
 /* info section */
-.info__section{
+.info__section {
     display: flex;
     gap: 24px;
     padding: 64px 0px 120px 0px;
 }
-.info__container_1{
+.info__container_1 {
     width: 100%;
     border-radius: 16px;
     background: rgb(208, 224, 243);
 }
 
-.house__image img{
+.house__image img {
     width: 100%;
     height: 263px;
     object-fit: cover;
 }
-.house__text{
+.house__text {
     padding: 32px 32px 0px 32px;
-
 }
-.house__text h4{
+.house__text h4 {
     font-size: 24px;
-
 }
-.house__text p{
+.house__text p {
     font-size: 14px;
     color: var(--color-text-ash);
 }
-.info__container_1__button{
-border-radius: 8px;
-border: none;
-padding: 10px 18px;
-color: var(--color-white);
-background-color: var(--color-primary);
-margin:24px 0 0 0;
-
+.info__container_1__button {
+    border-radius: 8px;
+    border: none;
+    padding: 10px 18px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    margin: 24px 0 0 0;
 }
-.property__insurance{
+.property__insurance {
     display: flex;
     flex-direction: column;
-    gap:90px;
-  
+    gap: 90px;
 }
-.Property__Insurance__icon{
+.Property__Insurance__icon {
     display: flex;
     flex-direction: column;
-    gap:24px;
- 
+    gap: 24px;
 }
 /* Service Section */
-.service__section{
+.service__section {
     padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.service__section__text p{
-   color: var(--color-primary);
-   font-size: 16px;
+.service__section__text p {
+    color: var(--color-primary);
+    font-size: 16px;
 }
-.service__section__text{
+.service__section__text {
     padding-bottom: 10px;
 }
-.service__section__text h4{
+.service__section__text h4 {
     font-size: 24px;
 }
-.service__section_1{
+.service__section_1 {
     display: flex;
-    gap:10px;
+    gap: 10px;
 }
 
-.service__section__img__container__1 img{
-    width:100%
+.service__section__img__container__1 img {
+    width: 100%;
 }
 
-.service__section__img__container{
+.service__section__img__container {
     display: flex;
     flex-direction: column;
-    height: 444px;   
 }
 
 /* patner companies */
-.patner__companies p{
+.patner__companies p {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--color-text-ash);
-
 }
 
-.patner__companies__logo{
+.patner__companies__logo {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
 }
 /* latest properties section */
 
+/* ongoin__project */
+.ongoin__project {
+    padding: 120px 0;
+}
 
+.ongoin__project__header {
+    display: flex;
+    justify-content: space-between;
+}
+.ongoin__project__image {
+    display: flex;
+    gap: 24px;
+}
+.ongoin__project__image img {
+    border-radius: 16px;
+    flex: 1;
+}
+/* testimonial */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    padding: 120px 0;
+}
 
-
+.testimonial__header h3 {
+    font-size: 38px;
+}
+.star {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.reviews__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.review__cart {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    padding: 24px;
+}
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.reviews h5 {
+    color: #0f0f0f;
+    font-weight: 600;
+    font-size: 18px;
+}
+.reviews p {
+    color: #949494;
+    width: 400;
+    font-size: 16px;
+}
+.avater {
+    display: flex;
+    gap: 10px;
+}
 /* media query breakpoints for responsive */
 /* navbar */
 /* Extra small devices (phones, less than 576px) */
@@ -381,6 +429,9 @@ margin:24px 0 0 0;
     .navbar {
         flex-direction: column;
     }
+    .reviews__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 @media (min-width: 600px) and (max-width: 768px) {
     .nav__link,
@@ -388,11 +439,14 @@ margin:24px 0 0 0;
     .navbar {
         flex-direction: column;
     }
+    .reviews__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (max-width: 480px) {
     /* CSS rules for phones and very small screens */
-    .nav__link{
+    .nav__link {
         gap: 16px;
     }
     .hero__section,
@@ -414,8 +468,11 @@ margin:24px 0 0 0;
         font-size: 23px;
         line-height: 30px;
     }
-    .hero__batch{
-        font-size: 12px
+    .hero__batch {
+        font-size: 12px;
+    }
+    .reviews__container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 @media (min-width: 480px) and (max-width: 600px) {
@@ -463,89 +520,92 @@ margin:24px 0 0 0;
 }
 
 /* 4 box Container  */
-@media (max-width: 480px){
-    .containers__box{
-        grid-template-columns: repeat(1,1fr);
+@media (max-width: 480px) {
+    .containers__box {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .containers__box__item h3{
+    .containers__box__item h3 {
         font-size: 24px;
     }
-    .containers__box__item p{
+    .containers__box__item p {
         font-size: 12px;
         text-align: center;
     }
 }
 /* Mobile (up to 480px) */
-@media (min-width: 480px) and (max-width: 600px){
-    .containers__box{
-        grid-template-columns: repeat(2,1fr);
+@media (min-width: 480px) and (max-width: 600px) {
+    .containers__box {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-
-    .containers__box__item h3{
+    .containers__box__item h3 {
         font-size: 36px;
-      
     }
-    .containers__box__item p{
+    .containers__box__item p {
         font-size: 16px;
         text-align: center;
     }
-    .containers__box{
+    .containers__box {
         flex-direction: column;
-        gap:24px;
+        gap: 24px;
     }
 }
-@media (min-width: 600px) and (max-width: 768px){
-    .containers__box{
-        grid-template-columns: repeat(2,1fr);
+@media (min-width: 600px) and (max-width: 768px) {
+    .containers__box {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-
-    .containers__box__item h3{
+    .containers__box__item h3 {
         font-size: 32px;
-      
     }
-    .containers__box__item p{
+    .containers__box__item p {
         font-size: 14px;
         text-align: center;
     }
 }
 /* info section */
 
-@media (max-width: 480px){
-    .info__section{
+@media (max-width: 480px) {
+    .info__section {
         flex-direction: column;
     }
 }
-@media (min-width: 480px) and (max-width: 600px){
-    .info__section{
+@media (min-width: 480px) and (max-width: 600px) {
+    .info__section {
         flex-direction: column;
         align-items: center;
     }
 }
-@media (min-width: 600px) and (max-width: 768px){
-    .info__section{
+@media (min-width: 600px) and (max-width: 768px) {
+    .info__section {
         flex-direction: column;
         align-items: center;
     }
 }
 
 /* patner companies */
-@media (max-width: 480px){
-    .patner__companies__logo{
+@media (max-width: 480px) {
+    .patner__companies__logo {
         grid-template-columns: repeat(2, 3fr);
         justify-items: center;
     }
 }
-@media (min-width: 480px) and (max-width: 600px){
-    .patner__companies__logo{
+@media (min-width: 480px) and (max-width: 600px) {
+    .patner__companies__logo {
         grid-template-columns: repeat(2, 3fr);
         justify-items: center;
     }
 }
-@media (min-width: 600px) and (max-width: 768px){
-    .patner__companies__logo{
+@media (min-width: 600px) and (max-width: 768px) {
+    .patner__companies__logo {
         grid-template-columns: repeat(3, 3fr);
         justify-items: center;
+    }
+}
+
+/* ongoin__project */
+@media (max-width: 480px) {
+    .ongoin__project__image {
+        flex-direction: column;
     }
 }
